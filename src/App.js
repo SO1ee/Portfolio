@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Landing from "./components/Landing";
 import { useRef } from "react";
+import Skill from "./components/Skill";
 
 function App() {
   const skillRef = useRef(null);
@@ -17,7 +18,7 @@ function App() {
           scrollToProject={() => projectsRef.current.scrollIntoView({ behavior: 'smooth' })}
           scrollToContact={() => contactRef.current.scrollIntoView({behavior:'smooth'})}
         />
-        <div ref={skillRef}></div>
+        <div ref={skillRef}><Skill/></div>
         <div ref={experienceRef}></div>
         <div ref={projectsRef}></div>
         <div ref={contactRef}></div>

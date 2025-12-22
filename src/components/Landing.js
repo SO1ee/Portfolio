@@ -3,11 +3,13 @@ import "../components/Landing.css";
 import LandingBanner from "../assets/landPicProp2.jpg"
 import nameLogo from "../assets/MobileHeader/NameLogo1.png";
 import ContactMainBtnIcon from "../assets/contactIcon.png";
-import DresMainBtnIcon from "../assets/downloadResumeIcon.png"
-import HifiHands from "../assets/hnadIcon.png"
+import DresMainBtnIcon from "../assets/downloadResumeIcon.png";
+import HifiHands from "../assets/hnadIcon.png";
 
-export default function Landing() {
+export default function Landing({scrollToSkill}) {
   const [mobHeaderExpanded, setmobHeaderExpanded] = useState(false);
+  const downloadPDF = () => { 
+  }
   return (
     <>
       <div className="LandinParentSecCls">
@@ -27,7 +29,7 @@ export default function Landing() {
                        mobHeaderExpanded ? (
                              <div className="landinMobViewConteadCls">
                                   <div className="MobileHeadCtrlBtnDivCls">
-                                      <button className="MobileHeadCtrlBtnCls" id="landNavSkillsBtnMob">Skills<span className="skillsNavIconCls mobNavTabComStyles"></span></button>
+                                      <button className="MobileHeadCtrlBtnCls" id="landNavSkillsBtnMob" onClick={scrollToSkill}>Skills<span className="skillsNavIconCls mobNavTabComStyles"></span></button>
                                   </div>
                                   <div className="MobileHeadCtrlBtnDivCls">
                                       <button className="MobileHeadCtrlBtnCls" id="landNavExpBtnMob" >Experience<span className="experienceNavIconCls mobNavTabComStyles"></span></button>
@@ -47,7 +49,7 @@ export default function Landing() {
             </div>
             <div className="LandingNavSecCls">
               <div className="LandingNavContCls">
-                <button className="landNavContBtnCls" name="landNavSkillsBtn" id="landNavSkillsBtn">Skills</button>
+                <button className="landNavContBtnCls" name="landNavSkillsBtn" id="landNavSkillsBtn" onClick={scrollToSkill}>Skills</button>
                 <button className="landNavContBtnCls" name="landNavExpBtn" id="landNavExpBtn">Experience</button>
                 <button className="landNavContBtnCls" name="landNavProjectsBtn" id="landNavProjectsBtn">Projects</button>
                 <button className="landNavContBtnCls" name="landNavContactBtn" id="landNavContactBtn">Contact</button>
@@ -63,7 +65,7 @@ export default function Landing() {
                 </div>
                 <div className="landMainFuncBtn">
                     <button className="landingMainBtnHeadcls"  name="landNavMainBtnContactMe" id="landNavMainBtnContactMe">Contact Me<span className="landBtnMainContCls landBtnMainContComCls"><img className="hifiHandsLandLocCls" src={ContactMainBtnIcon} alt="contactIcon"></img></span></button>
-                    <button className="landingMainBtnHeadcls" name="landNavMainBtnDRes" id="landNavMainBtnDRes">Download Resume<span className="landBtnMainDresCls landBtnMainContComCls"><img className="hifiHandsLandLocCls" src={ DresMainBtnIcon} alt="downloadIcon"></img></span></button>
+                    <button className="landingMainBtnHeadcls" name="landNavMainBtnDRes" id="landNavMainBtnDRes" onClick={downloadPDF}>Download Resume<span className="landBtnMainDresCls landBtnMainContComCls"><img className="hifiHandsLandLocCls" src={ DresMainBtnIcon} alt="downloadIcon"></img></span></button>
                 </div>
              </div>
              <div className="landSecRightPartCls">
