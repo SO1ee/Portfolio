@@ -2,7 +2,7 @@ import "../components/Contact.css";
 import LinkedIn from "../assets/Contact/LinkedInContLogo.png";
 import GitHub from "../assets/Contact/gitHubContLogo.png";
 import Naukri from "../assets/Contact/naukriContLogo.png";
-import Gmail from "../assets/Contact/gmailContLogo.png";
+// import Gmail from "../assets/Contact/gmailContLogo.png";
 import ContactBanner from "../assets/contactBanner.avif";
 
 export default function Contact() {
