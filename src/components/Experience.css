@@ -50,8 +50,8 @@
     font-size: 20px;
     font-family: 'Bree Serif', serif;
     font-weight:400;
-    display:flex;
-    gap:7px;
+    /* display:flex;
+    gap:7px; */
 }
 .expSumPointHeadCls::before{
     content :'';
@@ -62,6 +62,10 @@
     background-size:25px;
     min-width:25px;
     margin-top:2px;
+}
+.expSumPointHeadCls{
+    display:flex;
+    gap:7px;
 }
 .expSumImageHeadPCls{
     max-width:40%;
@@ -77,17 +81,317 @@
 .expSumTechCls{
     color:#5F4CA5;
 }
+.expSetItemCls{
+    display:flex;
+    flex-direction:column;
+    margin: auto;
+    padding-top: 50px;
+}
+.expSetItemCls>div:first-child::before {
+    content:"";
+    background-color: #5F4CA5;
+    height: 65px;
+    width: 5px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.expSetItemCls>div:first-child::before{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.expSetItemCls>div:last-child::after{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.indiExpSecLeftCls .indiExpPCls{
+    flex-direction:row-reverse;
+    justify-content: flex-end;
+}
+.indiExpSecRightCls .indiExpPCls{
+    flex-direction: row;
+    justify-content:flex-end;
+}
+.indiExpPCls, .indiExpDesPCls{
+    display:flex;
+}
+.indiExpPCls{
+    max-width:100%;
+    overflow:hidden;
+    gap:15px;
+}
+.indiExpSecLeftCls .indiExpDesPCls{
+    flex-direction: row-reverse;
+    border-radius: 99999px;
+    border-bottom-left-radius:0px;
+    border-top-left-radius:0px;
+}
+.indiExpSecRightCls .indiExpDesPCls{
+    border-radius: 99999px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius:0px;
+}
+.indiExpDesPCls{
+    overflow: hidden;
+    background: #5F4CA5;
+    padding: 30px;
+    gap:20px;align-items: center;
+}
+.indiExpTimeLogPCls{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.indiExpSecRightCls .indiExpTimeLogPCls{
+    align-items: flex-end
+}
+.indiExpSecLeftCls .indiExpTimeLogPCls{
+    align-items: flex-start;
+}
+.indiExpTimeLogPCls{
+    font-size:20px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.indiExpSecLeftCls::after, .indiExpSecRightCls::after{
+    content: "";
+    background-color: #5F4CA5;
+    height:65px;
+    width:5px;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+}
+.indiExpRoleContOneCls{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#fff;
+    padding:15px;
+    border-radius:9999px;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.indiExpCompLogoCls{
+    width:60px;
+    height:auto;
+}
+.indiExpoCompNameCls{
+    font-size: 16px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.indiExpRoleDescriptionCls{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.indiExpRolePosCls{
+    color:#fff;
+    font-size:24px;
+    font-family: 'Bree Serif', serif;
+    font-weight:400;
+    text-transform:uppercase;
+}
+.indiExpRolePosMobPCls{
+    display:none;
+}
+.indiExpRolePosMobChCls{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: #fff;
+    padding:15px;
+    border-radius:99999px;
+    height:fit-content;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+.indiExpRolePosMobCls{
+    color:#fff;
+    font-size:24px;
+    font-family:'Bree Serif', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.indiExpCompLogoMobCls{
+    width:45px;
+    height:auto;
+    display:none;
+}
+.indiExpTimePeriodMobCls{
+    font-size: 18px;
+    font-family:'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction:row;
+    gap:5px;
+    color:#fff;
+    flex-wrap: wrap;
+}
+.indiExpTimePeriodCountMobCls{
+    display:flex;
+    flex-direction:row;
+    gap:2px;
+    flex-wrap:nowrap;
+    justify-content:center;
+}
+.indiExpTimePeriodCountMobCls::before{
+    content: "(";
+    display:block;
+    color:#fff;
+}
+.indiExpTimePeriodCountMobCls::after{
+    content: ")";
+    display:block;
+    color:#fff;
+}
+.indiExpRoleDesCls{
+    color:#fff;
+    font-size:20px;
+    font-family:'Bree Serif', serif;
+    font-weight:400;
+}
+.expIndiCardTechStackTitleCls{
+    color:#fff;
+    font-size:16px;
+    font-family:'Bree Serif',serif;
+    font-weight:400;
+    display:flex;
+    align-items: center;
+}
+.indiExpTechStackCls{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+}
+.indiExpCompTechStackLogoCollectionCls{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.indiExpCompTechStackLogo{
+    width:34px;
+    height:34px;
+}
+@media(min-width: 991px){
+    .indiExpDesPCls{
+        max-width: 60%;
+    }
+}
 @media(max-width: 991px){
     .expSumImageHeadPCls{
         display:none !important;
+    }
+    .expSetItemCls{
+        max-width:95%;
+    }
+}
+@media (min-width: 768px){
+    .expSetItemCls{
+        max-width:95%;
+    }
+    .indiExpSecLeftCls .indiExpPCls, .indiExpSecRightCls .indiExpPCls{
+        flex-direction: column;
+        align-items: center;
+        gap:5px;
+    }
+    .indiExpSecLeftCls .indiExpTimeLogPCls, .indiExpSecRightCls .indiExpTimeLogPCls{
+        align-items:center;
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 5px;
+    }
+    .indiExpSecLeftCls .indiExpDesPCls, .indiExpSecRightCls .indiExpDesPCls{
+        flex-direction: row;
+        border-radius:99999px;
+        border-bottom-left-radius: 99999px !important;
+        border-top-left-radius: 99999px !important;
+        border-bottom-right-radius: 99999px !important;
+        border-top-right-radius:99999px !important;
+    }
+    .indiExpSecLeftCls::after , .indiExpSecRightCls::after{
+        height: 70px;
+    }
+    .indiExpTimeLenthCls::before{
+        content: "(";
+        display:block;
+        color:#000000;
+    }
+    .indiExpTimeLenthCls::after{
+        content: ")";
+        display:block;
+        color:#000000;
+    }
+    .indiExpTimeLenthCls{
+        display:flex;
+        flex-direction:row;
+        gap:3px;
     }
 }
 @media(max-width:768px){
     .experienceSecTitleCls{
         padding-bottom:20px;
     }
-    .expSumPointHeadPCls{
+    /* .expSumPointHeadPCls{
         font-size:20px;
+    } */
+     .expSumPointHeadPCls{
+        font-size: 17px;
+     }
+    .expSetItemCls>div:first-child::before{
+        height:40px;
+    }
+    .indiExpSecLeftCls::after, .indiExpSecRightCls::after{
+        height: 40px;
+    }
+    .indiExpDesPCls{
+        border-bottom-left-radius: 20px !important;
+        border-top-left-radius: 20px !important;
+        border-bottom-right-radius: 20px !important;
+        border-top-right-radius: 20px !important;
+    }
+    .indiExpPCls{
+        flex-direction: column !important;
+        align-items:center;
+        gap: 5px;
+    }
+    .indiExpTimeLogPCls, .indiExpRoleContOneCls{
+        display:none;
+    }
+    .indiExpoCompNameCls{
+        font-size:12px;
+    }
+    .indiExpRoleDescriptionCls{
+        align-items:center;
+    }
+    .indiExpRolePosCls{
+        display:none;
+    }
+    .indiExpRolePosMobPCls{
+        display: flex;
+        flex:row;
+        gap:10px;
+        align-items:center;
+    }
+    .indiExpRolePosMobChCls{
+        padding: 12px;
+    }
+    .indiExpRolePosMobCls{
+        font-size:22px;
+    }
+    .indiExpCompLogoMobCls{
+        display:block;
+    }
+    .indiExpRoleDesCls{
+        font-size:17px;
+    }
+    .indiExpRoleDesCls{
+        text-align:center;
     }
 }
 @media(max-width: 530px){
@@ -110,7 +414,39 @@
         background-size:20px;
         min-width:2px;
     }
-    .expSumPointHeadPCls{
+     .expSumPointHeadPCls{
         font-size:16px;
+    } 
+    .expSetItemCls{
+        max-width:90%;
+    }
+    .indiExpDesPCls{
+        padding: 15px;
+    }
+    .indiExpRoleDescriptionCls{
+        gap:15px;
+    }
+    .indiExpRolePosMobChCls{
+        display:none;
+    }
+    .indiExpRolePosMobCls{
+        font-size:19px;
+    }
+    .indiExpTimePeriodMobCls{
+        text-align:center;
+    }
+    .indiExpTimePeriodMobCls{
+        font-size:16px;
+    }
+    .indiExpRoleDesCls, .expIndiCardTechStackTitleCls{
+        font-size: 15px;
+    }
+    .indiExpTechStackCls, .indiExpCompTechStackLogoCollectionCls{
+        justify-content:center;
+        padding:2px;
+    }
+    .indiExpCompTechStackLogo{
+        width:30px;
+        height:30px;
     }
 }

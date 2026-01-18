@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+.skillTitleHeadCls {
+    font-size: 32px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.projectTopicLocCls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+}
+.projectHeadCls {
+    padding: 40px 10px;
+    background-color: #F0F0F0;
+}
+.projectSecCls {
+    gap: 45px;
+    display: flex;
+    flex-direction: column;
+}
+.projectCardPCls {
+    display: flex;
+    gap: 30px;
+    width: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 10px 40px 10px;
+    scrollbar-width: thin;
+    scrollbar-gutter: stable both-edges;
+}
+.proCardPCls {
+    width: fit-content;
+}
+.proCardCCls {
+    max-width: 280px;
+    min-width: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #ffff;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px 4px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.proCardCatyCls {
+    font-size: 18px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    min-width: 180px;
+    padding: 8px 12px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 10px 4px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.proCardHeadCls:hover .proCardPCls {
+    scale: 1.05;
+    transition: all 0.3s;
+}
+.proCardThumbNailCls {
+    max-width: 100%;
+    border-radius: 20px;
+}
+.proCardThumbCls {
+    overflow: hidden;
+    height: fit-content;
+}
+.proCardProjDetailsCls {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 18px;
+    gap: 15px;
+    border-radius: 20px;
+}
+.proCardTitleCls {
+    font-size: 22px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.proCardContCls {
+    font-size: 18px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+.projectTitleHeadCls {
+    font-size: 32px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.proCardLiveLinkCls {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.proCardLiveLinkBtnCls {
+    padding: 8px 18px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid;
+    font-size: 18px;
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+}
+@media (max-width: 768px) {
+    .projectTitleHeadCls {
+        font-size: 26px;
+    }
+}
+@media (max-width: 530px) {
+    .projectTitleHeadCls {
+        font-size: 24px;
+    }
+    .proCardTitleCls {
+        font-size: 19px;
+    }
+    .proCardContCls {
+        font-size: 16px;
+    }
+    .projectSecCls {
+        gap: 25px;
+    }
+}

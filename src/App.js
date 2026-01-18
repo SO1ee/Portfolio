@@ -1,9 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Landing from "./components/Landing";
 import { useRef } from "react";
 import Skill from "./components/Skill";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects"
+import Contact from "./components/Contact";
 
 function App() {
   const skillRef = useRef(null);
@@ -21,8 +22,8 @@ function App() {
         />
         <div ref={skillRef}><Skill/></div>
         <div ref={experienceRef}><Experience/></div>
-        <div ref={projectsRef}></div>
-        <div ref={contactRef}></div>
+        <div ref={projectsRef}><Projects/></div>
+        <div ref={contactRef}><Contact/></div>
       </div>
       
     </>
