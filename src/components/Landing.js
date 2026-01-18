@@ -17,7 +17,7 @@ export default function Landing({scrollToSkill,scrollToExperience,scrollToProjec
               <div className="LandingNavContMobcls">
                 <div className="mobHeaderBurgPCls">
                   <div className="mobViewHeadTitle">
-                    <img src={nameLogo} className="mobHeaderNameLogoCls"></img>
+                    <img src={nameLogo} className="mobHeaderNameLogoCls" alt=""></img>
                   </div>
                     {mobHeaderExpanded ? (
                       <button className="MobileHeadCtrlBtnBurgCls mobHeaderBurgIconActChCls" onClick={() => setmobHeaderExpanded(!mobHeaderExpanded)}></button>

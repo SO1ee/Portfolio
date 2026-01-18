@@ -44,7 +44,7 @@ export default function Projects() {
                                                 </div>
                                                 <div className='proCardCCls' style={{ backgroundColor: item.cardBackColour }}>
                                                     <div className='proCardThumbCls'>
-                                                        <img className='proCardThumbNailCls' src={item.projectBanner} alt="Project Card Image Thumbnail"/>
+                                                        <img className='proCardThumbNailCls' src={item.projectBanner} alt="Project Card Thumbnail"/>
                                                     </div>
                                                     <div className='proCardContCls'>
                                                         <div className='proCardProjDetailsCls' style={{color: item.cardContTextColor}}>
