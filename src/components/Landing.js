@@ -5,11 +5,19 @@ import nameLogo from "../assets/MobileHeader/NameLogo1.png";
 import ContactMainBtnIcon from "../assets/contactIcon.png";
 import DresMainBtnIcon from "../assets/downloadResumeIcon.png";
 import HifiHands from "../assets/hnadIcon.png";
+import Resume from "../assets/Soma_Halder.pdf"
 
 export default function Landing({scrollToSkill,scrollToExperience,scrollToProject,scrollToContact}) {
   const [mobHeaderExpanded, setmobHeaderExpanded] = useState(false);
   const downloadPDF = () => { 
-  }
+    const fileUrl = Resume;
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute('download',"Soma_Halder_Resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <div className="LandinParentSecCls">
